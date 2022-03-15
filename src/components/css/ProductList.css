@@ -1,0 +1,19 @@
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    margin: 40px;
+}
+ul img {
+    width: 200px;
+    border: 2px solid black;
+ }
+ ul div {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ ul h4 {
+     padding-left: 10px;
+ }
