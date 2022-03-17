@@ -3,6 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/Hero.css";
 // Fixa rimliga bilder.
+// props!
 
 function Hero() {
   return (

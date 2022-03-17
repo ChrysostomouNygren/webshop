@@ -1,5 +1,5 @@
 {
-  "name": "kunskapskontroll-3",
+  "name": "kunskapskontroll",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -12,7 +12,8 @@
     "react": "^17.0.2",
     "react-bootstrap": "^2.2.1",
     "react-dom": "^17.0.2",
-    "react-responsive-carousel": "^3.2.23"
+    "react-router-dom": "^6.2.2",
+    "recoil": "^0.6.1"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.7",

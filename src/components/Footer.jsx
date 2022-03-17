@@ -1,27 +1,10 @@
-import React from "react";
-import "./css/Footer.css";
+import React from 'react'
+import "./css/Footer.css"
 
 function Footer() {
   return (
-    <div className="footer">
-      <p>företagsinfo</p>
-      {/* om */}
-      {/* hållbarhet */}
-      {/* karriär */}
-      {/* press */}
-      <p>support</p>
-      {/* kundservice */}
-      {/* mitt konto */}
-      {/* kontakt */}
-      {/* cookie-inställningar */}
-      <p>sociala medier</p>
-      {/* facebook */}
-      {/* twitter */}
-      {/* instagram */}
-      {/* youtube */}
-      {/* pinterest */}
-    </div>
-  );
+    <div className='footer'>© K Chrysostomou Nygren 2022</div>
+  )
 }
 
-export default Footer;
+export default Footer
