@@ -7,6 +7,7 @@ import { useRecoilState, useRecoilValue } from "recoil";
 
 import Popup from "./Popup";
 import "./css/ProductList.css";
+import add from "./resources/add-tool-pngrepo-com.png";
 
 function ProductList() {
   const [modalShow, setModalShow] = useState(false);
@@ -40,7 +41,7 @@ function ProductList() {
               className="button"
               key={product.id}
               onClick={() => handleAdd(product)}
-              src="src\components\resources\add-tool-pngrepo-com.png"
+              src={add}
               alt="add"
             />
           </div>
