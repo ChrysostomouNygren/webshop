@@ -5,16 +5,15 @@ import { useRecoilState, useRecoilValue, useSetRecoilState } from "recoil";
 import { cartStatus, removeItemSelector } from '../recoil/cart/selectors';
 import Header from '../components/Header';
 
+
+// Styling tack!
+
 function Cart() {
     const products = useRecoilValue(productsState);
     const [cart, setCart] = useRecoilState(cartState);
     const { totalItems, totalPrice } = useRecoilValue(cartStatus);
     const removeItem = useSetRecoilState(removeItemSelector);
-  
-    function handleAdd(product) {
-      const newCart = [...cart, product];
-      setCart(newCart);
-    }
+
   return (
     <div>
         <Header />

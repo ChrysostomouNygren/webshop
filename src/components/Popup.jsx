@@ -1,12 +1,14 @@
-import Modal from "react-bootstrap/Modal";
-import { Button } from "bootstrap";
-import { productsState } from "../recoil/products/atom";
+import { Modal, Button } from "react-bootstrap";
 import { useRecoilValue } from "recoil";
+import { idState } from "../recoil/id/atom";
+// Här har jag id't på den jag tryckt på.... nao wat?
 
 
 function Popup(props) {
-  const products = useRecoilValue(productsState);
+  const id = useRecoilValue(idState);
 
+
+  console.log(id.title)
   return (
     <Modal
       {...props}
@@ -16,13 +18,13 @@ function Popup(props) {
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          {products.title}
+          {id.title}
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h5>{products.price}</h5>
+        <h5>{id.price}:-</h5>
         <p>
-          {products.desctription}
+          {id.description}
         </p>
       </Modal.Body>
       <Modal.Footer>
@@ -33,5 +35,3 @@ function Popup(props) {
 }
 
 export default Popup;
-
-
