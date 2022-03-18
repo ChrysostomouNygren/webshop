@@ -21,7 +21,7 @@
 .product .button:active {
   border-radius: 100%;
   background-color: lightgray;
-  transform: translateY(4px);
+  transform: translateY(2px);
 }
 
 .product {

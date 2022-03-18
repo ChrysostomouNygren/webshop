@@ -1,6 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./css/Header.css";
+import shoppingcart from "./resources/shopping-cart-pngrepo-com.png";
+import profileSite from "./resources/user-profile-pngrepo-com.png";
 
 function Header() {
   let navigate = useNavigate();
@@ -16,7 +18,7 @@ function Header() {
   const profile = () => {
     let path = `/profile`;
     navigate(path);
-  }
+  };
 
   return (
     <header>
@@ -24,23 +26,11 @@ function Header() {
         <button onClick={home}>webshop</button>
       </h1>
       <div>
-        {/* knapp med emoji förstoringsglas */}
-        {/* <input type="text" placeholder="Sök produkter" />
-        <p>
-          <button>
-            {" "}
-            <img
-              src="src\components\resources\search-pngrepo-com.png"
-              alt="search"
-            />
-          </button>
-        </p> */}
-        {/* emoji, figur */}
         <p>
           <button onClick={profile}>
             {" "}
             <img
-              src="src\components\resources\user-profile-pngrepo-com.png"
+              src={profileSite}
               alt="profile"
             />{" "}
             kundsida
@@ -51,7 +41,7 @@ function Header() {
           <button onClick={cart}>
             {" "}
             <img
-              src="src\components\resources\shopping-cart-pngrepo-com.png"
+              src={shoppingcart}
               alt="cart"
             />{" "}
             varukorg

@@ -1,15 +1,12 @@
 import React, { useState } from "react";
+
 import { productsState } from "../recoil/products/atom";
 import { cartState } from "../recoil/cart/atom";
+import { idState } from "../recoil/id/atom";
 import { useRecoilState, useRecoilValue } from "recoil";
+
 import Popup from "./Popup";
 import "./css/ProductList.css";
-
-import { idState } from "../recoil/id/atom";
-
-// /////////////////////////////////////////////////
-// react bootstrap popup module med product.description!
-// /////////////////////////////////////////////////
 
 function ProductList() {
   const [modalShow, setModalShow] = useState(false);
@@ -22,13 +19,13 @@ function ProductList() {
     setCart(newCart);
   }
 
+  // overlay på add-knappen?
   return (
     <div className="product-list">
       <Popup show={modalShow} onHide={() => setModalShow(false)} />
       {products.map((product) => (
         <span className="product" key={product.id}>
           <img
-
             onClick={() => [setModalShow(true), setCurrentPopup(product)]}
             src={product.img}
             alt={product.title}
