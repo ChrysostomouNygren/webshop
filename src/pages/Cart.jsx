@@ -31,8 +31,8 @@ function Cart() {
           </div>
         </p>
       ))}
-      <p>Antal varor: {totalItems}</p>
-      <p>Summa: {totalPrice}</p>
+      <p>Antal varor: {totalItems}st</p>
+      <p>Summa: {totalPrice}:-</p>
       <button className="cart-button" disabled>Gå till betalning</button>
       <Footer />
     </div>

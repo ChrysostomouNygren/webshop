@@ -2,8 +2,8 @@ import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/Hero.css";
-// Fixa rimliga bilder.
-// props!
+
+// Byta ut bilderna? Länka dom till faktiska produkterna?
 
 function Hero() {
   return (
